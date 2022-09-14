@@ -18,6 +18,10 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cors())
 
 // API Routes
+app.get('/', (req, res) => {
+  res.send('Email Contact Form')
+})
+
 app.use('/api', routes)
 
 // Server
